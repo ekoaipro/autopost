@@ -105,7 +105,7 @@
         <h2>Waktunya bikin workflow konten jadi <span class="grad">lebih teratur.</span></h2>
         <p>Ceritakan tujuan dan kebutuhan Instagram kamu. Kita diskusikan setup yang paling masuk akal sebelum mulai.</p>
         <a class="btn primary wa-link" href="#kontak">Chat via WhatsApp <span aria-hidden="true">↗</span></a>
-        <p style="font-size:10px;margin-top:13px;margin-bottom:0">Nomor WhatsApp dapat diatur melalui konfigurasi di bagian bawah file ini.</p>
+        <p style="font-size:10px;margin-top:13px;margin-bottom:0">Konsultasi langsung melalui WhatsApp.</p>
       </div>
     </section>
   </main>
@@ -114,13 +114,13 @@
   <script>
     // GANTI dengan nomor WhatsApp kamu: kode negara + nomor, tanpa tanda +, spasi, atau strip.
     // Contoh Indonesia: 6281234567890
-    const WHATSAPP_NUMBER = "";
+    const WHATSAPP_NUMBER = "6285277335254";
     document.getElementById("year").textContent = new Date().getFullYear();
     document.querySelectorAll(".wa-link").forEach((link) => {
       link.addEventListener("click", (event) => {
         if (!WHATSAPP_NUMBER) {
           event.preventDefault();
-          alert("Nomor WhatsApp belum diatur. Buka index.html lalu isi WHATSAPP_NUMBER di bagian paling bawah script.");
+          alert("Nomor WhatsApp belum diatur.");
           return;
         }
         const selected = link.dataset.package ? "Saya tertarik dengan paket " + link.dataset.package + "." : "Halo, saya ingin konsultasi jasa setup Instagram Autopost.";
